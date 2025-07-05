@@ -12,8 +12,8 @@ function Navbar() {
   return (
     <div>
   {/* NAVBAR - always visible */}
-  <div className="px-3 py-4">
-    <div className="bg-gray-200 sticky top-0 z-50 rounded-full shadow flex items-center justify-between py-4 px-6">
+  <div className="px-3 py-4 ">
+    <div className="bg-white sticky top-0    z-50 rounded-full shadow-md flex items-center justify-between py-4 px-6">
       <div>
         pawan giri
       </div>
@@ -42,7 +42,7 @@ function Navbar() {
     </div>
 
     {/* Bottom Button */}
-    <div className='flex justify-start mx-12 mb-6'>
+    <div className='flex justify-center mx-12 mb-6 items-center'>
       <button className='bg-[#853AFC] px-16 py-2 rounded-full text-white'>
         Get in Touch
       </button>
