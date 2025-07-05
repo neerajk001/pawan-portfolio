@@ -14,7 +14,7 @@ function Hero() {
           From idea to launch we build sleek fast <br /> and conversion-focused websites
         </p>
         <button className='bg-yellow-300 px-8 py-3 text-lg rounded-full mt-3 text-black font-semibold'>
-          Let's work together
+          Lets work together
         </button>
       </div>
     </div>

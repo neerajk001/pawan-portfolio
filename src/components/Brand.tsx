@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Heading from './Heading'
+
 
 const logos = [
   '/logo1.png',

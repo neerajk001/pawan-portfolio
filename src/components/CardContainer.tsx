@@ -36,7 +36,7 @@ const sites = [
   },
 ]
 
-function SiteCard({ img, title, desc, link }) {
+function SiteCard({ img, title, desc, link }:any) {
   return (
     <div className="bg-white min-w-[300px] max-w-[300px] rounded-xl shadow-md border border-gray-200 overflow-hidden  flex flex-col">
       {/* Image */}
