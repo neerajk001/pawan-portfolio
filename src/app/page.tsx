@@ -1,5 +1,4 @@
 import Brand from "@/components/Brand";
-import CardContainer from "@/components/CardContainer";
 import FeaturedWork from "@/components/FeaturedWork";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";

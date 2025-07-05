@@ -3,6 +3,13 @@
 import React from 'react'
 import Image from 'next/image'
 
+interface args  {
+  img: string
+  title: string
+  desc: string
+  link: string
+}
+
 const sites = [
   {
     img: '/work1.png',
@@ -36,7 +43,7 @@ const sites = [
   },
 ]
 
-function SiteCard({ img, title, desc, link }:any) {
+function SiteCard({ img, title, desc, link }:args) {
   return (
     <div className="bg-white min-w-[300px] max-w-[300px] rounded-xl shadow-md border border-gray-200 overflow-hidden  flex flex-col">
       {/* Image */}
