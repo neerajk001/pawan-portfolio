@@ -32,13 +32,13 @@ const sites: args[] = [
     link: 'https://blog-platform.com',
   },
   {
-    img: '/work3.png',
+    img: '/work5.png',
     title: 'ALPHA & OMEGA',
     desc: 'culture-driven Clothing brand.',
     link: 'https://marketing-site.com',
   },
   {
-    img: '/work5.png',
+    img: '/work4.png',
     title: 'BYG',
     desc: 'Hot Wheels Diecast Organizers.',
     link: 'https://dashboard-ui.com',
