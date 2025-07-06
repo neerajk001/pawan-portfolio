@@ -70,7 +70,7 @@ function ContactForm() {
             className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">Select your budget</option>
-            <option>Below ₹30,000</option>
+            
             <option>₹30,000 – ₹50,000</option>
             <option>₹50,000 – ₹1,00,000</option>
             <option>Above ₹1,00,000</option>
