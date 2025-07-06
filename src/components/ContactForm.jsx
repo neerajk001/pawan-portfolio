@@ -4,7 +4,7 @@ import React from 'react'
 
 function ContactForm() {
   return (
-    <div className="min-h-screen bg-[#f9f9f9] flex items-center justify-center px-4 py-10">
+    <div id='contact' className="min-h-screen  flex items-center justify-center px-4 py-10">
       <form
         action="https://formsubmit.co/workwithneeraj.01@gmail.com"
         method="POST"

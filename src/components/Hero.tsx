@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='flex justify-center items-center max-h-screen mt-18 px-4'>
+    <div id='home' className='flex justify-center items-center max-h-screen mt-18 px-4'>
       <div className=' space-y-2 text-center'>
         <h1 className='hidden md:flex text-5xl font-bold leading-normal'>
           We Design High-Converting <br /> Shopify website for D2C Brands

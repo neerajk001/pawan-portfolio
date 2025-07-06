@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import { ExternalLink } from 'lucide-react';
 
 interface args  {
   img: string
@@ -57,20 +58,17 @@ function SiteCard({ img, title, desc, link }:args) {
       </div>
 
       {/* Text content */}
-      <div className="mt-1 flex-grow">
-        <h2 className="text-lg font-semibold">{title}</h2>
+      <div className="mt-1 flex-grow p-1">
+        <div className='flex items-center space-x-2'><h2 className="text-lg font-semibold">{title}</h2>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+  <ExternalLink size={15} className='text-blue-600'/>
+</a>
+        </div>
         <p className="text-sm text-gray-600">{desc}</p>
       </div>
 
       {/* Button */}
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-4 inline-block text-blue-600 text-sm px-4 py-1 rounded-md underline"
-      >
-        Visit Site
-      </a>
+      
     </div>
   )
 }

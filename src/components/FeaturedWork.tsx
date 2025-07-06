@@ -3,7 +3,7 @@ import CardContainer from './CardContainer'
 
 function FeaturedWork() {
   return (
-    <div className='min-h-screen mt-12 px-4'>
+    <div id='work' className=' mt-12 px-4'>
 
       {/* What We Do Section */}
       <div className="text-center max-w-2xl mx-auto mb-12">
@@ -15,7 +15,7 @@ function FeaturedWork() {
 
       {/* Our Featured Work Section */}
       <div className='flex justify-center w-full items-center text-center mb-6'>
-        <h1 className='text-4xl md:text-6xl font-bold'>
+        <h1 className='text-2xl md:text-4xl font-bold'>
           Our Featured <span className='text-[#853AFC]'>Work</span>
         </h1>
       </div>

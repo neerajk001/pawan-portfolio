@@ -25,7 +25,7 @@ const processSteps = [
 
 function OurProcess() {
   return (
-    <div className="py-12 px-4">
+    <div id='process' className="py-12 px-4">
       <h2 className="text-center text-3xl md:text-4xl font-bold mb-10">
         Our Process
       </h2>
