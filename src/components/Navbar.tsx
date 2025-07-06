@@ -31,7 +31,7 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-white border-b border-gray-200 z-30 flex flex-col justify-center items-center space-y-6 text-xl font-semibold">
+        <div className="fixed top-0 left-0 w-full h-[90%] bg-white border-b border-gray-200 z-30 flex flex-col justify-center items-center space-y-6 text-xl font-semibold">
           <h1>Home</h1>
           <h1>Our Process</h1>
           <h1>Our Work</h1>
