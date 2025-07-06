@@ -6,7 +6,7 @@ function ContactForm() {
   return (
     <div id='contact' className="min-h-screen  flex items-center justify-center px-4 py-10">
       <form
-        action="https://formsubmit.co/workwithneeraj.01@gmail.com"
+        action="https://formsubmit.co/shopifypawan@gmail.com"
         method="POST"
         className="bg-white p-8 rounded-xl shadow-md max-w-md w-full"
       >
