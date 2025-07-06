@@ -14,7 +14,7 @@ function ContactForm() {
 
         {/* FormSubmit Hidden Inputs */}
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="http://localhost:3000/thank-you" />
+        <input type="hidden" name="_next" value="https://pawan-portfolio-ad37.vercel.app/thank-you" />
 
         {/* Name */}
         <div className="mb-4">
