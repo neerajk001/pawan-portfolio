@@ -14,7 +14,7 @@ interface args {
 const sites: args[] = [
   {
     img: '/work2.png',
-    title: 'GGBD',
+    title: 'GDDB',
     desc: 'Womens clothing brand.',
     
   },
