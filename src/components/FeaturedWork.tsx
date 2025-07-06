@@ -15,7 +15,7 @@ function FeaturedWork() {
 
       {/* Our Featured Work Section */}
       <div className='flex justify-center w-full items-center text-center mb-6'>
-        <h1 className='text-2xl md:text-4xl font-bold'>
+        <h1 className='text-3xl md:text-4xl font-bold'>
           Our Projects
         </h1>
       </div>
