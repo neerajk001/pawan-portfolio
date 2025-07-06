@@ -1,86 +1,111 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react'
+import { motion, useAnimation } from 'framer-motion'
 
-interface args  {
+interface args {
   img: string
   title: string
   desc: string
   link: string
 }
 
-const sites = [
+const sites: args[] = [
   {
-    img: '/work1.png',
-    title: 'Portfolio Website',
-    desc: 'A fast and clean portfolio built with Next.js and Tailwind CSS.',
+    img: '/work2.png',
+    title: 'GGBD',
+    desc: 'Womens clothing brand.',
     link: 'https://your-site.com',
   },
   {
-    img: '/work2.png',
-    title: 'Ecommerce Store',
-    desc: 'A modern Shopify store optimized for conversions.',
+    img: '/work1.png',
+    title: 'NIDA',
+    desc: 'Womens clothing brand.',
     link: 'https://ecom-example.com',
   },
   {
-    img: '/work3.png',
-    title: 'Blog Platform',
-    desc: 'A minimalist blog built for performance and readability.',
+    img: '/work4.png',
+    title: 'ASHWEAR',
+    desc: 'Gifting & Accessories Brand.',
     link: 'https://blog-platform.com',
   },
   {
-    img: '/work4.png',
-    title: 'Marketing Site',
-    desc: 'Landing page for product showcasing built for speed.',
+    img: '/work3.png',
+    title: 'ALPHA & OMEGA',
+    desc: 'culture-driven Clothing brand.',
     link: 'https://marketing-site.com',
   },
   {
     img: '/work5.png',
-    title: 'Dashboard UI',
-    desc: 'Clean and functional admin dashboard with data viz.',
+    title: 'BYG',
+    desc: 'Hot Wheels Diecast Organizers.',
     link: 'https://dashboard-ui.com',
   },
 ]
 
-function SiteCard({ img, title, desc, link }:args) {
+function SiteCard({ img, title, desc, link }: args) {
   return (
-    <div className="bg-white min-w-[300px] max-w-[300px] rounded-xl shadow-md border border-gray-200 overflow-hidden  flex flex-col">
-      {/* Image */}
+    <div className="min-w-[300px] max-w-[300px] rounded-xl  overflow-hidden flex flex-col  ">
       <div className="relative w-full h-36">
-        <Image
-          src={img}
-          alt={title}
-          fill
-          className="object-cover rounded-md"
-        />
+        <Image src={img} alt={title} fill className="object-cover rounded-md" />
       </div>
 
-      {/* Text content */}
-      <div className="mt-1 flex-grow p-1">
-        <div className='flex items-center space-x-2'><h2 className="text-lg font-semibold">{title}</h2>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-  <ExternalLink size={15} className='text-blue-600'/>
-</a>
+      <div className="mt-1 flex-grow p-2">
+        <div className="flex items-center space-x-2">
+          <h2 className="text-lg font-semibold">{title}</h2>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <ExternalLink size={15} className="text-blue-600" />
+          </a>
         </div>
         <p className="text-sm text-gray-600">{desc}</p>
       </div>
-
-      {/* Button */}
-      
     </div>
   )
 }
 
 function CardContainer() {
+  const controls = useAnimation()
+  const repeated = [...sites, ...sites] // Duplicate for loop
+
+  useEffect(() => {
+    controls.start({
+      x: ['0%', '-50%'],
+      transition: {
+        repeat: Infinity,
+        duration: 20,
+        ease: 'linear',
+      },
+    })
+  }, [controls])
+
+  const handlePause = () => {
+    controls.stop()
+  }
+
+  const handleResume = () => {
+    controls.start({
+      x: ['0%', '-50%'],
+      transition: {
+        repeat: Infinity,
+        duration: 20,
+        ease: 'linear',
+      },
+    })
+  }
+
   return (
-    <div className="w-full overflow-x-auto scroll-smooth scrollbar-hide">
-      <div className="flex gap-6 w-max px-2">
-        {sites.map((site, index) => (
+    <div
+      className="w-full overflow-hidden py-4"
+      onMouseEnter={handlePause}
+      onMouseLeave={handleResume}
+    >
+      <motion.div className="flex gap-6 w-max" animate={controls}>
+        {repeated.map((site, index) => (
           <SiteCard key={index} {...site} />
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }

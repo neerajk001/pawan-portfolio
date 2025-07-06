@@ -1,15 +1,21 @@
+/* ✅ Google Font FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ✅ Then Tailwind and others */
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Global font */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Public Sans', sans-serif;
+}
 
+/* Scrollbar Hide */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-html {
-  scroll-behavior: smooth;
 }

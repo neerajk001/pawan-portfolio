@@ -36,8 +36,8 @@ function OurProcess() {
             key={index}
             className="bg-blue-600 text-white rounded-lg p-4 shadow-md"
           >
-            <h3 className="text-lg font-semibold mb-1">{step.title}</h3>
-            <p className="text-sm">{step.description}</p>
+            <h3 className="text-lg font-semibold mb-1 text-center">{step.title}</h3>
+            <p className="text-sm text-center">{step.description}</p>
           </div>
         ))}
       </div>

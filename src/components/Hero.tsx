@@ -13,9 +13,11 @@ function Hero() {
         <p className='text-black  text-lg md:text-2xl'>
           From idea to launch we build sleek fast <br /> and conversion-focused websites
         </p>
-        <button className='bg-yellow-300 px-8 py-3 text-lg rounded-full mt-3 text-black font-semibold'>
-          Lets work together
-        </button>
+       <a href="#contact">
+  <button className="bg-yellow-300 px-8 py-3 text-lg rounded-full mt-3 text-black font-semibold cursor-pointer">
+    Let&apos;s work together
+  </button>
+</a>
       </div>
     </div>
   )

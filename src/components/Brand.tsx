@@ -7,7 +7,6 @@ import { motion } from 'framer-motion'
 
 const logos = [
   '/logo1.png',
-  '/logo2.png',
   '/logo3.png',
   '/logo4.png',
   '/logo5.png',
@@ -21,10 +20,10 @@ function Brand() {
     <div className=' mt-12 '>
       {/* Heading */}
       <div className='flex justify-center items-center flex-col '>
-      <Image src='/horizontal-nari.png'
+      <Image src='/untitled.png'
       alt='nari'
       width={300}
-      height={200}
+      height={250}
       />
       <h1 className='text-md font-semibold'>Trusted by 40+ D2C Brands</h1>
       </div>

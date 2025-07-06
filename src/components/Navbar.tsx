@@ -17,10 +17,10 @@ function Navbar() {
           <div className="font-bold text-lg">pawan giri</div>
 
           <div className="hidden md:flex justify-between gap-10">
-              <a href="#home" className="text-gray-700 hover:text-blue-600">Home</a>
-  <a href="#process" className="text-gray-700 hover:text-blue-600">Our Process</a>
-  <a href="#work" className="text-gray-700 hover:text-blue-600">Our Work</a>
-  <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
+            <a href="#home" className="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#process" className="text-gray-700 hover:text-blue-600">Our Process</a>
+            <a href="#work" className="text-gray-700 hover:text-blue-600">Our Work</a>
+            <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
           </div>
 
           <button className="md:hidden cursor-pointer" onClick={toggleMenu}>
@@ -32,10 +32,10 @@ function Navbar() {
       {/* MOBILE MENU */}
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-[90%] bg-white border-b border-gray-200 z-30 flex flex-col justify-center items-center space-y-6 text-xl font-semibold">
-          <h1>Home</h1>
-          <h1>Our Process</h1>
-          <h1>Our Work</h1>
-          <h1>Contact</h1>
+         <a href="#home" className="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#process" className="text-gray-700 hover:text-blue-600">Our Process</a>
+            <a href="#work" className="text-gray-700 hover:text-blue-600">Our Work</a>
+            <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
         </div>
       )}
     </div>
