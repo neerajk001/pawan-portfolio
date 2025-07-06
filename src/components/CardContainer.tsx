@@ -38,7 +38,7 @@ const sites: args[] = [
     link: 'https://marketing-site.com',
   },
   {
-    img: '/work4.png',
+    img: '/work3.png',
     title: 'BYG',
     desc: 'Hot Wheels Diecast Organizers.',
     link: 'https://dashboard-ui.com',

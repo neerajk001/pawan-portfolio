@@ -32,7 +32,7 @@ function Brand() {
       {/* Carousel */}
       <div className='overflow-hidden mt-3 '>
         <motion.div
-          className='flex gap-12'
+          className='flex gap-6'
           animate={{ x: ['0%', '-100%'] }}
           transition={{
             repeat: Infinity,
