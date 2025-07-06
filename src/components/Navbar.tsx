@@ -9,6 +9,10 @@ function Navbar() {
     setIsOpen(!isOpen)
   }
 
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
   return (
     <div>
       {/* NAVBAR */}
@@ -32,10 +36,10 @@ function Navbar() {
       {/* MOBILE MENU */}
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-[90%] bg-white border-b border-gray-200 z-30 flex flex-col justify-center items-center space-y-6 text-xl font-semibold">
-         <a href="#home" className="text-gray-700 hover:text-blue-600">Home</a>
-            <a href="#process" className="text-gray-700 hover:text-blue-600">Our Process</a>
-            <a href="#work" className="text-gray-700 hover:text-blue-600">Our Work</a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
+          <a href="#home" onClick={closeMenu} className="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#process" onClick={closeMenu} className="text-gray-700 hover:text-blue-600">Our Process</a>
+          <a href="#work" onClick={closeMenu} className="text-gray-700 hover:text-blue-600">Our Work</a>
+          <a href="#contact" onClick={closeMenu} className="text-gray-700 hover:text-blue-600">Contact</a>
         </div>
       )}
     </div>
