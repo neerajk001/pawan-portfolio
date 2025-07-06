@@ -74,7 +74,7 @@ function CardContainer() {
       x: ['0%', '-50%'],
       transition: {
         repeat: Infinity,
-        duration: 20,
+        duration: 40,
         ease: 'linear',
       },
     })
