@@ -20,7 +20,7 @@ function ContactForm() {
         </div>
 
         {/* RIGHT PANEL */}
-        <form 
+        <form
           action="https://formspree.io/f/mgvybbkd"
           method="POST"
           className="lg:w-1/2 p-8 space-y-4 w-full "
@@ -49,7 +49,15 @@ function ContactForm() {
             </div>
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Your Contact*</label>
-              <input type="tel" name="phone"  placeholder="Your Contact" className="input " />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Contact"
+                pattern="0?[6-9][0-9]{9}"
+                required
+                className="input"
+              />
+
             </div>
           </div>
 
