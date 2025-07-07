@@ -25,7 +25,7 @@ function Brand() {
       width={300}
       height={250}
       />
-      <h1 className='text-md font-semibold'>Trusted by 40+ D2C Brands</h1>
+      <h1 className='text-md font-semibold'>Trusted by 40+ D2C Brands and founders</h1>
       </div>
       
 

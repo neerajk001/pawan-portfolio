@@ -8,7 +8,7 @@ function ContactForm() {
       <div className="flex flex-col lg:flex-row w-full max-w-6xl bg-white shadow-xl rounded-xl overflow-hidden">
 
         {/* LEFT PANEL */}
-        <div className="lg:w-1/2 p-8 bg-white flex flex-col justify-center">
+        <div className="lg:w-1/2 p-8 bg-white flex flex-col ">
           <h2 className="text-3xl font-bold text-black mb-4">Get in touch</h2>
           <p className="text-gray-600 mb-6">
             If you’re a business looking for a website from concept, strategy to design and launch, get in touch.
@@ -23,7 +23,7 @@ function ContactForm() {
         <form 
           action="https://formsubmit.co/shopifypawan@gmail.com"
           method="POST"
-          className="lg:w-1/2 p-8 space-y-4 w-full text-center items-center"
+          className="lg:w-1/2 p-8 space-y-4 w-full "
         >
           {/* Hidden Inputs */}
           <input type="hidden" name="_captcha" value="false" />
@@ -33,11 +33,11 @@ function ContactForm() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Full Name*</label>
-              <input type="text" name="name" required placeholder="Full Name" className="input" />
+              <input type="text" name="name" required placeholder="Full Name" className="input text-center" />
             </div>
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Your Brand Name</label>
-              <input type="text" name="brand" placeholder="Your Brand Name" className="input" />
+              <input type="text" name="brand" placeholder="Your Brand Name" className="input text-center" />
             </div>
           </div>
 
@@ -45,20 +45,20 @@ function ContactForm() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Business Email*</label>
-              <input type="email" name="email" required placeholder="Business Email" className="input" />
+              <input type="email" name="email" required placeholder="Business Email" className="input text-center" />
             </div>
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Your Contact*</label>
-              <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Your Contact" className="input" />
+              <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Your Contact" className="input text-center" />
             </div>
           </div>
 
           {/* ROW 3: Project Description */}
-          <div className="flex flex-col lg:flex-row gap-4">
-            <div className="lg:w-1/2">
+          <div className="flex flex-col  gap-4">
+            <div className="md:w-full">
               <label className="text-sm font-medium block">Tell me about your Project*</label>
             </div>
-            <div className="lg:w-1/2">
+            <div className="md:w-full">
               <textarea
                 name="message"
                 rows={4}
@@ -71,10 +71,10 @@ function ContactForm() {
 
           {/* ROW 4: Budget */}
           <div className="flex flex-col  gap-4">
-            <div className="lg:w-full">
-              <label className="text-sm font-medium block">What is your budget?*</label>
+            <div className="md:w-full">
+              <label className="text-sm font-medium flex ">What is your budget?*</label>
             </div>
-            <div className="lg:w-1/2">
+            <div className="md:w-full">
               <select name="budget" required className="input bg-white w-full">
                 <option value="">Select your budget</option>
                 <option>₹30,000 – ₹50,000</option>
