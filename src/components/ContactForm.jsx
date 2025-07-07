@@ -1,111 +1,118 @@
 "use client"
 
-import React from 'react'
+import React from "react"
 
 function ContactForm() {
   return (
-    <div id='contact' className="min-h-screen  flex items-center justify-center px-4 py-10">
-      <form
-        action="https://formsubmit.co/shopifypawan@gmail.com"
-        method="POST"
-        className="bg-white p-8 rounded-xl shadow-md max-w-md w-full"
-      >
-        <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <div id="contact" className="min-h-screen flex items-center justify-center px-4 py-10 ">
+      <div className="flex flex-col lg:flex-row w-full max-w-6xl bg-white shadow-xl rounded-xl overflow-hidden">
 
-        {/* FormSubmit Hidden Inputs */}
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://www.pawangiri.design/thank-you" />
-
-        {/* Name */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium mb-1">Name*</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            required
-            className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+        {/* LEFT PANEL */}
+        <div className="lg:w-1/2 p-8 bg-white flex flex-col justify-center">
+          <h2 className="text-3xl font-bold text-black mb-4">Get in touch</h2>
+          <p className="text-gray-600 mb-6">
+            If you’re a business looking for a website from concept, strategy to design and launch, get in touch.
+          </p>
+          <div className="text-gray-800 space-y-2">
+            <p className="flex items-center gap-2">📧 <a href="mailto:shopifypawan@gmail.com" className="underline">shopifypawan@gmail.com</a></p>
+            <p className="flex items-center gap-2">📍 Based in Mumbai, India</p>
+          </div>
         </div>
 
-        {/* Email */}
-        {/* Phone Number */}
-<div className="mb-4">
-  <label className="block text-sm font-medium mb-1">Phone Number*</label>
-  <input
-    type="tel"
-    name="phone"
-    placeholder="Your phone number"
-    required
-    pattern="[0-9]{10}"
-    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-  />
-</div>
-
-
-        {/* Service */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium mb-1">
-            Which service are you interested in?*
-          </label>
-          <select
-            name="service"
-            required
-            className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="">Select a service</option>
-            <option>Website Design</option>
-            <option>Website Redesign</option>
-            <option>Website Maintenance</option>
-            <option>Website Audit</option>
-          </select>
-        </div>
-
-        {/* Budget */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium mb-1">What is your budget?*</label>
-          <select
-            name="budget"
-            required
-            className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="">Select your budget</option>
-            
-            <option>₹30,000 – ₹50,000</option>
-            <option>₹50,000 – ₹1,00,000</option>
-            <option>Above ₹1,00,000</option>
-          </select>
-        </div>
-
-        {/* Message */}
-        <div className="mb-6">
-          <label className="block text-sm font-medium mb-1">
-            Tell us a bit more about your project*
-          </label>
-          <textarea
-            name="message"
-            rows="4"
-            required
-            placeholder="Your message..."
-            className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          ></textarea>
-        </div>
-
-        {/* Submit */}
-        <button
-          type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-full transition duration-300"
+        {/* RIGHT PANEL */}
+        <form
+          action="https://formsubmit.co/shopifypawan@gmail.com"
+          method="POST"
+          className="lg:w-1/2 p-8 space-y-4 w-full"
         >
-          Submit
-        </button>
+          {/* Hidden Inputs */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://www.pawangiri.design/thank-you" />
 
-        {/* Note */}
-        <p className="text-xs text-center text-gray-500 mt-4">
-          Note: I only take on projects with a budget above ₹30,000.
-        </p>
-      </form>
+          {/* ROW 1: Full Name & Brand Name */}
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="w-full">
+              <label className="text-sm font-medium block mb-1">Full Name*</label>
+              <input type="text" name="name" required placeholder="Full Name" className="input" />
+            </div>
+            <div className="w-full">
+              <label className="text-sm font-medium block mb-1">Your Brand Name</label>
+              <input type="text" name="brand" placeholder="Your Brand Name" className="input" />
+            </div>
+          </div>
+
+          {/* ROW 2: Email & Contact */}
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="w-full">
+              <label className="text-sm font-medium block mb-1">Business Email*</label>
+              <input type="email" name="email" required placeholder="Business Email" className="input" />
+            </div>
+            <div className="w-full">
+              <label className="text-sm font-medium block mb-1">Your Contact*</label>
+              <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Your Contact" className="input" />
+            </div>
+          </div>
+
+          {/* ROW 3: Project Description */}
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="lg:w-1/2">
+              <label className="text-sm font-medium block">Tell me about your Project*</label>
+            </div>
+            <div className="lg:w-1/2">
+              <textarea
+                name="message"
+                rows={4}
+                required
+                placeholder="Your message..."
+                className="input resize-none w-full"
+              />
+            </div>
+          </div>
+
+          {/* ROW 4: Budget */}
+          <div className="flex flex-col  gap-4">
+            <div className="lg:w-full">
+              <label className="text-sm font-medium block">What is your budget?*</label>
+            </div>
+            <div className="lg:w-1/2">
+              <select name="budget" required className="input bg-white w-full">
+                <option value="">Select your budget</option>
+                <option>₹30,000 – ₹50,000</option>
+                <option>₹50,000 – ₹1,00,000</option>
+                <option>Above ₹1,00,000</option>
+              </select>
+              <p className="text-xs text-gray-500 mt-1">(Starting rate of Website projects is $3000 or ₹2,00,000)</p>
+            </div>
+          </div>
+
+          {/* SUBMIT */}
+          <button
+            type="submit"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-full transition duration-300"
+          >
+            SEND MESSAGE
+          </button>
+
+          {/* Chat Note */}
+          <p className="text-center text-sm mt-2">
+            Or <a
+              href="https://wa.me/918149681890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 text-green-600 underline"
+            >
+              <img src="/whatsapp.svg" alt="WhatsApp" className="w-5 h-5" />
+              Chat Now
+            </a>
+
+          </p>
+        </form>
+      </div>
     </div>
   )
 }
 
 export default ContactForm
+
+
+//918149681890
