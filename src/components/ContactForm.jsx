@@ -33,11 +33,11 @@ function ContactForm() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Full Name*</label>
-              <input type="text" name="name" required placeholder="Full Name" className="input text-center" />
+              <input type="text" name="name" required placeholder="Full Name" className="input " />
             </div>
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Your Brand Name</label>
-              <input type="text" name="brand" placeholder="Your Brand Name" className="input text-center" />
+              <input type="text" name="brand" placeholder="Your Brand Name" className="input " />
             </div>
           </div>
 
@@ -45,11 +45,11 @@ function ContactForm() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Business Email*</label>
-              <input type="email" name="email" required placeholder="Business Email" className="input text-center" />
+              <input type="email" name="email" required placeholder="Business Email" className="input " />
             </div>
             <div className="w-full">
               <label className="text-sm font-medium block mb-1">Your Contact*</label>
-              <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Your Contact" className="input text-center" />
+              <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Your Contact" className="input " />
             </div>
           </div>
 
@@ -72,7 +72,7 @@ function ContactForm() {
           {/* ROW 4: Budget */}
           <div className="flex flex-col  gap-4">
             <div className="md:w-full">
-              <label className="text-sm font-medium flex ">What is your budget?*</label>
+              <label className="text-sm font-medium flex ">How much are you looking to invest on this project?(starting rate fo website projects is ₹30,000 or $400 )</label>
             </div>
             <div className="md:w-full">
               <select name="budget" required className="input bg-white w-full">
@@ -81,7 +81,7 @@ function ContactForm() {
                 <option>₹50,000 – ₹1,00,000</option>
                 <option>Above ₹1,00,000</option>
               </select>
-              <p className="text-xs text-gray-500 mt-1">(Starting rate of Website projects is ₹30,000 upto ₹1,00,000)</p>
+              {/* <p className="text-xs text-gray-500 mt-1">(Starting rate of Website projects is ₹30,000 upto ₹1,00,000)</p> */}
             </div>
           </div>
 
