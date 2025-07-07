@@ -20,10 +20,10 @@ function ContactForm() {
         </div>
 
         {/* RIGHT PANEL */}
-        <form
+        <form 
           action="https://formsubmit.co/shopifypawan@gmail.com"
           method="POST"
-          className="lg:w-1/2 p-8 space-y-4 w-full"
+          className="lg:w-1/2 p-8 space-y-4 w-full text-center items-center"
         >
           {/* Hidden Inputs */}
           <input type="hidden" name="_captcha" value="false" />
@@ -81,7 +81,7 @@ function ContactForm() {
                 <option>₹50,000 – ₹1,00,000</option>
                 <option>Above ₹1,00,000</option>
               </select>
-              <p className="text-xs text-gray-500 mt-1">(Starting rate of Website projects is $3000 or ₹2,00,000)</p>
+              <p className="text-xs text-gray-500 mt-1">(Starting rate of Website projects is ₹30,000 upto ₹1,00,000)</p>
             </div>
           </div>
 
