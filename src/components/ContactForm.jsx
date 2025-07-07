@@ -21,7 +21,7 @@ function ContactForm() {
 
         {/* RIGHT PANEL */}
         <form 
-          action="https://formsubmit.co/shopifypawan@gmail.com"
+          action="https://formspree.io/f/mgvybbkd"
           method="POST"
           className="lg:w-1/2 p-8 space-y-4 w-full "
         >
